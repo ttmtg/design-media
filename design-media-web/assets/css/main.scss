@@ -1,0 +1,41 @@
+---
+---
+@import 'common';
+body { font-family:"Yu Gothic Medium", "游ゴシック Medium", Yu Gothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;}
+header { height: 5rem;}
+nav  {
+  max-width: 64rem;
+  margin: auto;
+}
+footer {
+  text-align: center;
+  height: 5rem;
+}
+section {
+  width: 48rem;
+  margin: 0 auto 5rem;
+}
+h1 { font-size: 12rem;}
+p,ul { font-size: 2rem;}
+ul { list-style: none;}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container article {
+  width: 34rem;
+  text-align: justify;
+}
+.container p { line-height: 2;}
+.list div { margin: 0 0 4rem;}
+.list ul {
+  list-style: none;
+  padding: 0;
+}
+.list li:first-child { border-top: 1px solid #eee;}
+.list a {
+  display: block;
+  padding: 1rem 0 1rem .5rem;
+  border-bottom: 1px solid #eee;
+}
