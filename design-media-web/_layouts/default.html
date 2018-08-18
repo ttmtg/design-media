@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
- {% include head.html %}
-<body>
-  {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
-</body>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <div class="body_contents">
+      {{ content }}
+      {% include linklist.html %}
+    </div>
+    {% include footer.html %}
+  </body>
 </html>
