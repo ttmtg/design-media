@@ -1,3 +1,88 @@
-h1 {
- font-size: 10rem
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", Yu Gothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+nav  {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+footer {
+  text-align: center;
+  height: 5rem;
+}
+.body_contents {
+  section, header {
+    width: 48rem;
+    margin: 0 auto 5rem;
+  }
+}
+h1 { font-size: 2.4rem;}
+p,ul { font-size: 1rem;}
+ul { list-style: none;}
+article {
+  p {text-align: justify;}
+}
+header {
+  a {
+    color: #252338;
+    font-weight: bold;
+    text-decoration: none;
+    &:visited { color: #252338;}
+  }
+}
+main {
+  display: block;
+  height: 36rem;
+  background: #eee;
+  margin: 0 auto 4rem;
+  padding: 4rem;
+  box-sizing: border-box;
+  div {
+    width: 48rem;
+    margin: 0 auto;
+  }
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  article {
+    width: 34rem;
+    text-align: justify;
+  }
+  p { line-height: 2;}
+}
+.list {
+  div { margin: 0 0 4rem;}
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li:first-child { border-top: 1px solid #eee;}
+  a {
+    color: #015d3f;
+    display: block;
+    padding: 1rem 0 1rem .5rem;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    &:hover {
+      font-weight: bold;
+      background-color: #edf9f0;
+      transition: .5s;
+    }
+  }
+}
+@media (max-width: 600px){
+  main {
+    div { width: 100%;}
+  }
+  .body_contents {
+    section, header {
+      width: 100%;
+      margin: 0 auto 5rem;
+      padding: 0 1rem;
+      box-sizing: border-box;
+    }
+  }
 }
